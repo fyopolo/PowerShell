@@ -1,0 +1,24 @@
+﻿​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​6/13/2020 4:48:42 PM [EAL-SRV-MSG02] '' created request.
+6/13/2020 5:01:26 PM [EAL-SRV-MSG02] The Microsoft Exchange Mailbox Replication service 'EAL-SRV-MSG02.EALangenfeld.local' (15.0.1497.0 caps:1FFF) is examining the request.
+6/13/2020 5:01:26 PM [EAL-SRV-MSG02] Connected to target mailbox 'fc8759ab-21d1-4968-a705-a4f5a36b5a94', database 'MBX-01', Mailbox server 'EAL-SRV-MSG02.EALangenfeld.local' Version 15.0 (Build 1497.0).
+6/13/2020 5:01:26 PM [EAL-SRV-MSG02] Connected to source mailbox '', database 'Public Folder Database', Mailbox server 'EALEXCH1.EALangenfeld.local' Version 14.3 (Build 442.0).
+6/13/2020 5:01:26 PM [EAL-SRV-MSG02] Request processing started.
+6/13/2020 5:01:26 PM [EAL-SRV-MSG02] Cleared sync state for request 00000000-0000-0000-0000-000000000000 due to 'CleanupOrphanedMailbox'.
+6/13/2020 5:01:27 PM [EAL-SRV-MSG02] Stage: CreatingFolderHierarchy. Percent complete: 10.
+6/13/2020 5:01:27 PM [EAL-SRV-MSG02] Initializing folder hierarchy from mailbox '': 15 folders total.
+6/13/2020 5:01:27 PM [EAL-SRV-MSG02] Folder creation progress: 0 folders created in mailbox 'fc8759ab-21d1-4968-a705-a4f5a36b5a94'.
+6/13/2020 5:01:27 PM [EAL-SRV-MSG02] Folder hierarchy initialized for mailbox 'fc8759ab-21d1-4968-a705-a4f5a36b5a94': 11 folders created.
+6/13/2020 5:01:27 PM [EAL-SRV-MSG02] Stage: CreatingInitialSyncCheckpoint. Percent complete: 15.
+6/13/2020 5:01:27 PM [EAL-SRV-MSG02] Initial sync checkpoint progress: 0/15 folders processed. Currently processing mailbox 'fc8759ab-21d1-4968-a705-a4f5a36b5a94'.
+6/13/2020 5:01:29 PM [EAL-SRV-MSG02] Initial sync checkpoint completed: 11 folders processed.
+6/13/2020 5:01:29 PM [EAL-SRV-MSG02] Stage: LoadingMessages. Percent complete: 20.
+6/13/2020 5:01:30 PM [EAL-SRV-MSG02] Messages have been enumerated successfully. 12481 items loaded. Total size: 43.03 MB (45,117,113 bytes).
+6/13/2020 5:01:30 PM [EAL-SRV-MSG02] Stage: CopyingMessages. Percent complete: 25.
+6/13/2020 5:01:30 PM [EAL-SRV-MSG02] Copy progress: 0/12481 messages, 0 B (0 bytes)/43.03 MB (45,117,113 bytes), 2/15 folders completed.
+6/13/2020 5:05:42 PM [EAL-SRV-MSG02] Copying messages is complete. Copying rules and security descriptors.
+6/13/2020 5:05:45 PM [EAL-SRV-MSG02] Initial seeding completed, 12481 items copied, total size 43.03 MB (45,117,113 bytes).
+6/13/2020 5:05:45 PM [EAL-SRV-MSG02] Stage: IncrementalSync. Percent complete: 95.
+6/13/2020 5:05:45 PM [EAL-SRV-MSG02] Folder hierarchy changes reported in source '': 0 changed folders, 0 deleted folders.
+6/13/2020 5:05:45 PM [EAL-SRV-MSG02] Incremental Sync 'fc8759ab-21d1-4968-a705-a4f5a36b5a94' completed: 0 hierarchy updates, 0 content changes.
+6/13/2020 5:05:45 PM [EAL-SRV-MSG02] Stage: IncrementalSync. Percent complete: 95.
+6/13/2020 5:05:45 PM [EAL-SRV-MSG02] Automatically suspending job.

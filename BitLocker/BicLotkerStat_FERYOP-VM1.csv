@@ -1,0 +1,4 @@
+"ComputerName","TPMPresent","Volume","VolumeType","VolCapacity(GB)","ProtectionStatus","VolumeStatus","KeyProtectorType","BitLockerKeyID","RecoveryKey"
+"FERYOP-VM1","True","C:","OperatingSystem","50","On","FullyEncrypted","RecoveryPassword","AC1BCCA2-1259-408A-98FB-753439FF7787
+AEF1E501-0127-49FC-8BCE-39DFAE35281E","365970-487410-020251-500665-529419-279598-586245-330044
+095876-603042-457072-177815-068024-629981-451099-316019"

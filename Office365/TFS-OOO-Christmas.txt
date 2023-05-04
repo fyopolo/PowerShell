@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TFS - HAPPY HOLIDAYS</title>
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="3">
+  <tbody>
+    <tr>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddKTqrRs3xJZlqMs3uDS2DEiyvEJXsTGDHVP25y3aAibERdhkEQ&s" width="284" height="177" alt=""/></td>
+    </tr>
+    <tr>
+      <td style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-style: normal; font-size: 12px;">Our office will remain closed for Christmas Eve (Tuesday, December 24th) &amp; Christmas Day (Wednesday, December 25th). <br>
+        We assure you that all your emails will be answered as soon as we return to the office.<br>
+        <strong> If you require emergency service during the holiday, please contact us at (630)-546-8909 and a live representative will be able to assist.</strong><br>
+<hr>
+      Thank You and <br>
+      <span style="font-weight: bold">Have A Merry Christmas!</span></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

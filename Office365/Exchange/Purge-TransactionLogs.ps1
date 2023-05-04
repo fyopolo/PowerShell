@@ -1,0 +1,6 @@
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "http://$env:COMPUTERNAME.$env:userdnsdomain/PowerShell/" -Authentication Kerberos
+Import-PSSession $Session
+$dbs = get-mailboxdatabase | where {$_.server -eq $env:COMPUTERNAME -or $_.replicationtype -eq "Remote"}
+ForEach ($db in $dbs) {$file = $db.logfolderpath+"\"+$db.LogFilePrefix+".chk";$checkpointfind = eseutil /mk $file | select-string 'Checkpoint:';if ($checkpointfind -ne $Null){$checkpoint = $checkpointfind[1].tostring().split(',')[0].split('x')[1];$zeros = "0"*(8-$checkpoint.length);$chkfilename = $db.LogFilePrefix+$zeros+$checkpoint+".log";$chkfile = get-childitem -path $db.logfolderpath -filter $chkfilename;$info = "The log file at the latest checkpoint is called "+$chkfile.name+", and was written to at: "+$chkfile.lastwritetime;$info;echo ' ';$files = (get-childitem -path $db.logfolderpath -filter "*.log" | where {$_.name -ne $db.LogFilePrefix+".log" -and $_.name -notlike "*tmp*" -and $_.lastwritetime -lt $chkfile.lastwritetime});$number = $files.count;$files | remove-item; $report = "Completed clearing "+$number+" Committed Transaction Logs for "+$db.name+".";$report;echo ' '} else {$report = "No committed Transaction Logs for "+$db.name;$report;echo ' '}}
+Echo "Completed removing all Committed Transaction logs for Databases on this server."
+pause

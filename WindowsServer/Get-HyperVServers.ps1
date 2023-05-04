@@ -1,0 +1,1 @@
+﻿$HyperVServers = Get-ADObject -Filter 'ObjectClass -eq "serviceConnectionPoint" -and Name -eq "Microsoft Hyper-V"' | foreach { ($HyperV.DistinguishedName.Split(",").Trim("CN=").Trim("OU=").Trim("DC=")).GetValue(1) | Out-Host }

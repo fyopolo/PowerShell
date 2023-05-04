@@ -1,0 +1,4468 @@
+{
+  "metadata": [
+    {
+      "value": {
+        "cli": {
+          "commands": [
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Updated",
+                      "field_name": "updated"
+                    },
+                    {
+                      "display_name": "UserId",
+                      "field_name": "user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserId",
+                      "field_name": "updated_by_user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserName",
+                      "field_name": "updated_by_user_name"
+                    },
+                    {
+                      "display_name": "Created",
+                      "field_name": "created"
+                    },
+                    {
+                      "display_name": "UserName",
+                      "field_name": "user_name"
+                    },
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Status",
+                      "field_name": "status"
+                    },
+                    {
+                      "display_name": "ResourceId",
+                      "field_name": "resource_id"
+                    },
+                    {
+                      "display_name": "StartTime",
+                      "field_name": "start_time"
+                    },
+                    {
+                      "display_name": "ServiceErrors",
+                      "field_name": "service_errors"
+                    },
+                    {
+                      "display_name": "SubStatus",
+                      "field_name": "sub_status"
+                    },
+                    {
+                      "display_name": "TaskType",
+                      "field_name": "task_type"
+                    },
+                    {
+                      "display_name": "TaskProgressPhases",
+                      "field_name": "task_progress_phases"
+                    },
+                    {
+                      "display_name": "ErrorMessage",
+                      "field_name": "error_message"
+                    },
+                    {
+                      "display_name": "OrgId",
+                      "field_name": "org_id"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    },
+                    {
+                      "display_name": "EstimatedRemainingMinutes",
+                      "field_name": "estimated_remaining_minutes"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "EndTime",
+                      "field_name": "end_time"
+                    },
+                    {
+                      "display_name": "PhaseInProgress",
+                      "field_name": "phase_in_progress"
+                    },
+                    {
+                      "display_name": "TaskVersion",
+                      "field_name": "task_version"
+                    },
+                    {
+                      "display_name": "ResourceType",
+                      "field_name": "resource_type"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "OriginalService",
+                      "field_name": "original_service"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "DefaultMessage",
+                      "field_name": "default_message"
+                    },
+                    {
+                      "display_name": "OriginalServiceErrorCode",
+                      "field_name": "original_service_error_code"
+                    },
+                    {
+                      "display_name": "ErrorCode",
+                      "field_name": "error_code"
+                    },
+                    {
+                      "display_name": "LocalizedMessage",
+                      "field_name": "localized_message"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.service_error"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Name",
+                      "field_name": "name"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task_progress_phase"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.autoscaler",
+                "name": "get"
+              },
+              "service_id": "com.vmware.api.autoscaler",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "task",
+                  "description": "task identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "task"
+                }
+              ],
+              "description": "Retrieve details of an autoscaler task.",
+              "operation_id": "get"
+            },
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Updated",
+                      "field_name": "updated"
+                    },
+                    {
+                      "display_name": "UserId",
+                      "field_name": "user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserId",
+                      "field_name": "updated_by_user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserName",
+                      "field_name": "updated_by_user_name"
+                    },
+                    {
+                      "display_name": "Created",
+                      "field_name": "created"
+                    },
+                    {
+                      "display_name": "UserName",
+                      "field_name": "user_name"
+                    },
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Status",
+                      "field_name": "status"
+                    },
+                    {
+                      "display_name": "ResourceId",
+                      "field_name": "resource_id"
+                    },
+                    {
+                      "display_name": "StartTime",
+                      "field_name": "start_time"
+                    },
+                    {
+                      "display_name": "ServiceErrors",
+                      "field_name": "service_errors"
+                    },
+                    {
+                      "display_name": "SubStatus",
+                      "field_name": "sub_status"
+                    },
+                    {
+                      "display_name": "TaskType",
+                      "field_name": "task_type"
+                    },
+                    {
+                      "display_name": "TaskProgressPhases",
+                      "field_name": "task_progress_phases"
+                    },
+                    {
+                      "display_name": "ErrorMessage",
+                      "field_name": "error_message"
+                    },
+                    {
+                      "display_name": "OrgId",
+                      "field_name": "org_id"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    },
+                    {
+                      "display_name": "EstimatedRemainingMinutes",
+                      "field_name": "estimated_remaining_minutes"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "EndTime",
+                      "field_name": "end_time"
+                    },
+                    {
+                      "display_name": "PhaseInProgress",
+                      "field_name": "phase_in_progress"
+                    },
+                    {
+                      "display_name": "TaskVersion",
+                      "field_name": "task_version"
+                    },
+                    {
+                      "display_name": "ResourceType",
+                      "field_name": "resource_type"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "OriginalService",
+                      "field_name": "original_service"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "DefaultMessage",
+                      "field_name": "default_message"
+                    },
+                    {
+                      "display_name": "OriginalServiceErrorCode",
+                      "field_name": "original_service_error_code"
+                    },
+                    {
+                      "display_name": "ErrorCode",
+                      "field_name": "error_code"
+                    },
+                    {
+                      "display_name": "LocalizedMessage",
+                      "field_name": "localized_message"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.service_error"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Name",
+                      "field_name": "name"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task_progress_phase"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs.scalesddcsize",
+                "name": "post"
+              },
+              "service_id": "com.vmware.api.orgs.sddcs.scale_sddc_size",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                }
+              ],
+              "description": "Scale SDDC Size.",
+              "operation_id": "post"
+            },
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Updated",
+                      "field_name": "updated"
+                    },
+                    {
+                      "display_name": "UserId",
+                      "field_name": "user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserId",
+                      "field_name": "updated_by_user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserName",
+                      "field_name": "updated_by_user_name"
+                    },
+                    {
+                      "display_name": "Created",
+                      "field_name": "created"
+                    },
+                    {
+                      "display_name": "UserName",
+                      "field_name": "user_name"
+                    },
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Status",
+                      "field_name": "status"
+                    },
+                    {
+                      "display_name": "ResourceId",
+                      "field_name": "resource_id"
+                    },
+                    {
+                      "display_name": "StartTime",
+                      "field_name": "start_time"
+                    },
+                    {
+                      "display_name": "ServiceErrors",
+                      "field_name": "service_errors"
+                    },
+                    {
+                      "display_name": "SubStatus",
+                      "field_name": "sub_status"
+                    },
+                    {
+                      "display_name": "TaskType",
+                      "field_name": "task_type"
+                    },
+                    {
+                      "display_name": "TaskProgressPhases",
+                      "field_name": "task_progress_phases"
+                    },
+                    {
+                      "display_name": "ErrorMessage",
+                      "field_name": "error_message"
+                    },
+                    {
+                      "display_name": "OrgId",
+                      "field_name": "org_id"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    },
+                    {
+                      "display_name": "EstimatedRemainingMinutes",
+                      "field_name": "estimated_remaining_minutes"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "EndTime",
+                      "field_name": "end_time"
+                    },
+                    {
+                      "display_name": "PhaseInProgress",
+                      "field_name": "phase_in_progress"
+                    },
+                    {
+                      "display_name": "TaskVersion",
+                      "field_name": "task_version"
+                    },
+                    {
+                      "display_name": "ResourceType",
+                      "field_name": "resource_type"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "OriginalService",
+                      "field_name": "original_service"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "DefaultMessage",
+                      "field_name": "default_message"
+                    },
+                    {
+                      "display_name": "OriginalServiceErrorCode",
+                      "field_name": "original_service_error_code"
+                    },
+                    {
+                      "display_name": "ErrorCode",
+                      "field_name": "error_code"
+                    },
+                    {
+                      "display_name": "LocalizedMessage",
+                      "field_name": "localized_message"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.service_error"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Name",
+                      "field_name": "name"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task_progress_phase"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs.clusters.edrspolicy",
+                "name": "post"
+              },
+              "service_id": "com.vmware.api.orgs.sddcs.clusters.edrs_policy",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "cluster",
+                  "description": "cluster identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "cluster"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "enable-edrs",
+                  "description": "True if EDRS is enabled",
+                  "type": "boolean",
+                  "generic": "NONE",
+                  "field_name": "edrs_policy.enable_edrs"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "min-hosts",
+                  "description": "The minimum number of hosts that the cluster can scale in to.",
+                  "type": "long",
+                  "generic": "OPTIONAL",
+                  "field_name": "edrs_policy.min_hosts"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "policy-type",
+                  "description": "Possible values are: ",
+                  "type": "string",
+                  "generic": "OPTIONAL",
+                  "field_name": "edrs_policy.policy_type"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "max-hosts",
+                  "description": "The maximum number of hosts that the cluster can scale out to.",
+                  "type": "long",
+                  "generic": "OPTIONAL",
+                  "field_name": "edrs_policy.max_hosts"
+                }
+              ],
+              "description": "Change the current EDRS policy on a cluster.",
+              "operation_id": "post"
+            },
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "EnableEdrs",
+                      "field_name": "enable_edrs"
+                    },
+                    {
+                      "display_name": "MinHosts",
+                      "field_name": "min_hosts"
+                    },
+                    {
+                      "display_name": "PolicyType",
+                      "field_name": "policy_type"
+                    },
+                    {
+                      "display_name": "MaxHosts",
+                      "field_name": "max_hosts"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.edrs_policy"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs.clusters.edrspolicy",
+                "name": "get"
+              },
+              "service_id": "com.vmware.api.orgs.sddcs.clusters.edrs_policy",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "cluster",
+                  "description": "cluster identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "cluster"
+                }
+              ],
+              "description": "Get the current EDRS policy on a cluster.",
+              "operation_id": "get"
+            },
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Updated",
+                      "field_name": "updated"
+                    },
+                    {
+                      "display_name": "UserId",
+                      "field_name": "user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserId",
+                      "field_name": "updated_by_user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserName",
+                      "field_name": "updated_by_user_name"
+                    },
+                    {
+                      "display_name": "Created",
+                      "field_name": "created"
+                    },
+                    {
+                      "display_name": "UserName",
+                      "field_name": "user_name"
+                    },
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Status",
+                      "field_name": "status"
+                    },
+                    {
+                      "display_name": "ResourceId",
+                      "field_name": "resource_id"
+                    },
+                    {
+                      "display_name": "StartTime",
+                      "field_name": "start_time"
+                    },
+                    {
+                      "display_name": "ServiceErrors",
+                      "field_name": "service_errors"
+                    },
+                    {
+                      "display_name": "SubStatus",
+                      "field_name": "sub_status"
+                    },
+                    {
+                      "display_name": "TaskType",
+                      "field_name": "task_type"
+                    },
+                    {
+                      "display_name": "TaskProgressPhases",
+                      "field_name": "task_progress_phases"
+                    },
+                    {
+                      "display_name": "ErrorMessage",
+                      "field_name": "error_message"
+                    },
+                    {
+                      "display_name": "OrgId",
+                      "field_name": "org_id"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    },
+                    {
+                      "display_name": "EstimatedRemainingMinutes",
+                      "field_name": "estimated_remaining_minutes"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "EndTime",
+                      "field_name": "end_time"
+                    },
+                    {
+                      "display_name": "PhaseInProgress",
+                      "field_name": "phase_in_progress"
+                    },
+                    {
+                      "display_name": "TaskVersion",
+                      "field_name": "task_version"
+                    },
+                    {
+                      "display_name": "ResourceType",
+                      "field_name": "resource_type"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "OriginalService",
+                      "field_name": "original_service"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "DefaultMessage",
+                      "field_name": "default_message"
+                    },
+                    {
+                      "display_name": "OriginalServiceErrorCode",
+                      "field_name": "original_service_error_code"
+                    },
+                    {
+                      "display_name": "ErrorCode",
+                      "field_name": "error_code"
+                    },
+                    {
+                      "display_name": "LocalizedMessage",
+                      "field_name": "localized_message"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.service_error"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Name",
+                      "field_name": "name"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task_progress_phase"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.autoscaler",
+                "name": "analysis"
+              },
+              "service_id": "com.vmware.api.autoscaler",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "clusters",
+                  "description": "List of input cluster uuids",
+                  "type": "string",
+                  "generic": "LIST",
+                  "field_name": "clusters"
+                }
+              ],
+              "description": "Get cross-cluster load-balancer recommendations for the sddc.",
+              "operation_id": "analysis"
+            },
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Updated",
+                      "field_name": "updated"
+                    },
+                    {
+                      "display_name": "UserId",
+                      "field_name": "user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserId",
+                      "field_name": "updated_by_user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserName",
+                      "field_name": "updated_by_user_name"
+                    },
+                    {
+                      "display_name": "Created",
+                      "field_name": "created"
+                    },
+                    {
+                      "display_name": "UserName",
+                      "field_name": "user_name"
+                    },
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Status",
+                      "field_name": "status"
+                    },
+                    {
+                      "display_name": "ResourceId",
+                      "field_name": "resource_id"
+                    },
+                    {
+                      "display_name": "StartTime",
+                      "field_name": "start_time"
+                    },
+                    {
+                      "display_name": "ServiceErrors",
+                      "field_name": "service_errors"
+                    },
+                    {
+                      "display_name": "SubStatus",
+                      "field_name": "sub_status"
+                    },
+                    {
+                      "display_name": "TaskType",
+                      "field_name": "task_type"
+                    },
+                    {
+                      "display_name": "TaskProgressPhases",
+                      "field_name": "task_progress_phases"
+                    },
+                    {
+                      "display_name": "ErrorMessage",
+                      "field_name": "error_message"
+                    },
+                    {
+                      "display_name": "OrgId",
+                      "field_name": "org_id"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    },
+                    {
+                      "display_name": "EstimatedRemainingMinutes",
+                      "field_name": "estimated_remaining_minutes"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "EndTime",
+                      "field_name": "end_time"
+                    },
+                    {
+                      "display_name": "PhaseInProgress",
+                      "field_name": "phase_in_progress"
+                    },
+                    {
+                      "display_name": "TaskVersion",
+                      "field_name": "task_version"
+                    },
+                    {
+                      "display_name": "ResourceType",
+                      "field_name": "resource_type"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "OriginalService",
+                      "field_name": "original_service"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "DefaultMessage",
+                      "field_name": "default_message"
+                    },
+                    {
+                      "display_name": "OriginalServiceErrorCode",
+                      "field_name": "original_service_error_code"
+                    },
+                    {
+                      "display_name": "ErrorCode",
+                      "field_name": "error_code"
+                    },
+                    {
+                      "display_name": "LocalizedMessage",
+                      "field_name": "localized_message"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.service_error"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Name",
+                      "field_name": "name"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task_progress_phase"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.autoscaler",
+                "name": "stop"
+              },
+              "service_id": "com.vmware.api.autoscaler",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                }
+              ],
+              "description": "Stop cross-cluster load balancer initiated xvMotion operations on the sddc.",
+              "operation_id": "stop"
+            },
+            {
+              "formatter": "TABLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "StatusKey",
+                      "field_name": "status_key"
+                    },
+                    {
+                      "display_name": "ClusterId",
+                      "field_name": "cluster_id"
+                    },
+                    {
+                      "display_name": "StatusMessage",
+                      "field_name": "status_message"
+                    },
+                    {
+                      "display_name": "EdrsPolicy",
+                      "field_name": "edrs_policy"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.edrs_cluster_info"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "EnableEdrs",
+                      "field_name": "enable_edrs"
+                    },
+                    {
+                      "display_name": "MinHosts",
+                      "field_name": "min_hosts"
+                    },
+                    {
+                      "display_name": "PolicyType",
+                      "field_name": "policy_type"
+                    },
+                    {
+                      "display_name": "MaxHosts",
+                      "field_name": "max_hosts"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.edrs_policy"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs.edrspolicy",
+                "name": "get"
+              },
+              "service_id": "com.vmware.api.orgs.sddcs.edrs_policy",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                }
+              ],
+              "description": "Get the EDRS policy on every cluster in an SDDC.",
+              "operation_id": "get"
+            },
+            {
+              "formatter": "SIMPLE",
+              "output_field_list": [
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Updated",
+                      "field_name": "updated"
+                    },
+                    {
+                      "display_name": "UserId",
+                      "field_name": "user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserId",
+                      "field_name": "updated_by_user_id"
+                    },
+                    {
+                      "display_name": "UpdatedByUserName",
+                      "field_name": "updated_by_user_name"
+                    },
+                    {
+                      "display_name": "Created",
+                      "field_name": "created"
+                    },
+                    {
+                      "display_name": "UserName",
+                      "field_name": "user_name"
+                    },
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Status",
+                      "field_name": "status"
+                    },
+                    {
+                      "display_name": "ResourceId",
+                      "field_name": "resource_id"
+                    },
+                    {
+                      "display_name": "StartTime",
+                      "field_name": "start_time"
+                    },
+                    {
+                      "display_name": "ServiceErrors",
+                      "field_name": "service_errors"
+                    },
+                    {
+                      "display_name": "SubStatus",
+                      "field_name": "sub_status"
+                    },
+                    {
+                      "display_name": "TaskType",
+                      "field_name": "task_type"
+                    },
+                    {
+                      "display_name": "TaskProgressPhases",
+                      "field_name": "task_progress_phases"
+                    },
+                    {
+                      "display_name": "ErrorMessage",
+                      "field_name": "error_message"
+                    },
+                    {
+                      "display_name": "OrgId",
+                      "field_name": "org_id"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    },
+                    {
+                      "display_name": "EstimatedRemainingMinutes",
+                      "field_name": "estimated_remaining_minutes"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "EndTime",
+                      "field_name": "end_time"
+                    },
+                    {
+                      "display_name": "PhaseInProgress",
+                      "field_name": "phase_in_progress"
+                    },
+                    {
+                      "display_name": "TaskVersion",
+                      "field_name": "task_version"
+                    },
+                    {
+                      "display_name": "ResourceType",
+                      "field_name": "resource_type"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "OriginalService",
+                      "field_name": "original_service"
+                    },
+                    {
+                      "display_name": "Params",
+                      "field_name": "params"
+                    },
+                    {
+                      "display_name": "DefaultMessage",
+                      "field_name": "default_message"
+                    },
+                    {
+                      "display_name": "OriginalServiceErrorCode",
+                      "field_name": "original_service_error_code"
+                    },
+                    {
+                      "display_name": "ErrorCode",
+                      "field_name": "error_code"
+                    },
+                    {
+                      "display_name": "LocalizedMessage",
+                      "field_name": "localized_message"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.service_error"
+                },
+                {
+                  "output_fields": [
+                    {
+                      "display_name": "Id",
+                      "field_name": "id"
+                    },
+                    {
+                      "display_name": "Name",
+                      "field_name": "name"
+                    },
+                    {
+                      "display_name": "ProgressPercent",
+                      "field_name": "progress_percent"
+                    }
+                  ],
+                  "structure_id": "com.vmware.model.task_progress_phase"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.autoscaler",
+                "name": "run"
+              },
+              "service_id": "com.vmware.api.autoscaler",
+              "options": [
+                {
+                  "short_option": "",
+                  "long_option": "org",
+                  "description": "org identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "org"
+                },
+                {
+                  "short_option": "",
+                  "long_option": "sddc",
+                  "description": "Sddc identifier (required)",
+                  "type": "string",
+                  "generic": "NONE",
+                  "field_name": "sddc"
+                }
+              ],
+              "description": "Execute cross-cluster load balancing operations on the sddc.",
+              "operation_id": "run"
+            }
+          ],
+          "namespaces": [
+            {
+              "children": [
+                {
+                  "path": "com.vmware.api.orgs",
+                  "name": "sddcs"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api",
+                "name": "orgs"
+              },
+              "description": "orgs namespace"
+            },
+            {
+              "children": [
+                {
+                  "path": "com.vmware",
+                  "name": "api"
+                }
+              ],
+              "identity": {
+                "path": "com",
+                "name": "vmware"
+              },
+              "description": "vmware namespace"
+            },
+            {
+              "children": [
+                {
+                  "path": "com.vmware.api",
+                  "name": "orgs"
+                },
+                {
+                  "path": "com.vmware.api",
+                  "name": "autoscaler"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware",
+                "name": "api"
+              },
+              "description": "api namespace"
+            },
+            {
+              "children": [],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs",
+                "name": "edrspolicy"
+              },
+              "description": "edrspolicy namespace"
+            },
+            {
+              "children": [
+                {
+                  "path": "com",
+                  "name": "vmware"
+                }
+              ],
+              "identity": {
+                "path": "",
+                "name": "com"
+              },
+              "description": "com namespace"
+            },
+            {
+              "children": [],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs.clusters",
+                "name": "edrspolicy"
+              },
+              "description": "edrspolicy namespace"
+            },
+            {
+              "children": [],
+              "identity": {
+                "path": "com.vmware.api",
+                "name": "autoscaler"
+              },
+              "description": "autoscaler namespace"
+            },
+            {
+              "children": [],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs",
+                "name": "scalesddcsize"
+              },
+              "description": "scalesddcsize namespace"
+            },
+            {
+              "children": [
+                {
+                  "path": "com.vmware.api.orgs.sddcs.clusters",
+                  "name": "edrspolicy"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.orgs.sddcs",
+                "name": "clusters"
+              },
+              "description": "clusters namespace"
+            },
+            {
+              "children": [
+                {
+                  "path": "com.vmware.api.orgs.sddcs",
+                  "name": "edrspolicy"
+                },
+                {
+                  "path": "com.vmware.api.orgs.sddcs",
+                  "name": "scalesddcsize"
+                },
+                {
+                  "path": "com.vmware.api.orgs.sddcs",
+                  "name": "clusters"
+                }
+              ],
+              "identity": {
+                "path": "com.vmware.api.orgs",
+                "name": "sddcs"
+              },
+              "description": "sddcs namespace"
+            },
+            {
+              "children": [
+                {
+                  "path": "",
+                  "name": "com"
+                }
+              ],
+              "identity": {
+                "path": "",
+                "name": ""
+              },
+              "description": "Root namespace"
+            }
+          ]
+        },
+        "routing": { "packages": [] },
+        "metamodel": {
+          "metadata": [],
+          "documentation": "",
+          "name": "com.vmware.api",
+          "packages": [
+            {
+              "value": {
+                "metadata": [],
+                "documentation": "",
+                "name": "com.vmware.model",
+                "structures": [
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "",
+                      "name": "com.vmware.model.edrs_policy",
+                      "enumerations": [],
+                      "constants": [
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "rapid-scaleup",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "POLICY_TYPE_RAPID_SCALEUP"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "performance",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "POLICY_TYPE_PERFORMANCE"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "cost",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "POLICY_TYPE_COST"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "storage-scaleup",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "POLICY_TYPE_STORAGE_SCALEUP"
+                        }
+                      ],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "enable_edrs",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "True if EDRS is enabled",
+                          "name": "enable_edrs",
+                          "type": {
+                            "builtin_type": "BOOLEAN",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "min_hosts",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The minimum number of hosts that the cluster can scale in to.",
+                          "name": "min_hosts",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "LONG",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "policy_type",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Possible values are: \n   -  POLICY_TYPE_COST\n,   -  POLICY_TYPE_PERFORMANCE\n,   -  POLICY_TYPE_STORAGE_SCALEUP\n,   -  POLICY_TYPE_RAPID_SCALEUP\n,  The EDRS policy type. This can either be 'cost', 'performance', 'storage-scaleup' or 'rapid-scaleup'.",
+                          "name": "policy_type",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "max_hosts",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The maximum number of hosts that the cluster can scale out to.",
+                          "name": "max_hosts",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "LONG",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.edrs_policy"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "",
+                      "name": "com.vmware.model.task",
+                      "enumerations": [],
+                      "constants": [
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "CANCELING",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_CANCELING"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "STARTED",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_STARTED"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "FINISHED",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_FINISHED"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "FAILED",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_FAILED"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "CANCELED",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_CANCELED"
+                        }
+                      ],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "updated",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "updated",
+                          "type": {
+                            "builtin_type": "DATE_TIME",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "user_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User id that last updated this record",
+                          "name": "user_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "updated_by_user_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User id that last updated this record",
+                          "name": "updated_by_user_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "updated_by_user_name",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User name that last updated this record",
+                          "name": "updated_by_user_name",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "created",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "created",
+                          "type": {
+                            "builtin_type": "DATE_TIME",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "user_name",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User name that last updated this record",
+                          "name": "user_name",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Unique ID for this entity",
+                          "name": "id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "status",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Possible values are: \n   -  STATUS_STARTED\n,   -  STATUS_CANCELING\n,   -  STATUS_FINISHED\n,   -  STATUS_FAILED\n,   -  STATUS_CANCELED\n,",
+                          "name": "status",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "resource_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "UUID of resources task is acting upon",
+                          "name": "resource_id",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "start_time",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "start_time",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "DATE_TIME",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "service_errors",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Service errors returned from SDDC services.",
+                          "name": "service_errors",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "category": "GENERIC",
+                                "generic_instantiation": {
+                                  "generic_type": "LIST",
+                                  "element_type": {
+                                    "user_defined_type": {
+                                      "resource_type": "com.vmware.vapi.structure",
+                                      "resource_id": "com.vmware.model.service_error"
+                                    },
+                                    "category": "USER_DEFINED"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "sub_status",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "sub_status",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "task_type",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "task_type",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "task_progress_phases",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Task progress phases involved in current task execution",
+                          "name": "task_progress_phases",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "category": "GENERIC",
+                                "generic_instantiation": {
+                                  "generic_type": "LIST",
+                                  "element_type": {
+                                    "user_defined_type": {
+                                      "resource_type": "com.vmware.vapi.structure",
+                                      "resource_id": "com.vmware.model.task_progress_phase"
+                                    },
+                                    "category": "USER_DEFINED"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "error_message",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "error_message",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "org_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "org_id",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "progress_percent",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Estimated progress percentage the task executed format: int32",
+                          "name": "progress_percent",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "LONG",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "estimated_remaining_minutes",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Estimated remaining time in minute of the task execution, < 0 means no estimation for the task. format: int32",
+                          "name": "estimated_remaining_minutes",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "LONG",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "params",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "params",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "DYNAMIC_STRUCTURE",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "end_time",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "end_time",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "DATE_TIME",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "phase_in_progress",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The current in progress phase ID in the task execution, if none in progress, empty string returned.",
+                          "name": "phase_in_progress",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "task_version",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "task_version",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "resource_type",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Type of resource being acted upon",
+                          "name": "resource_type",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.task"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "",
+                      "name": "com.vmware.model.abstract_entity",
+                      "enumerations": [],
+                      "constants": [],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "updated",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "updated",
+                          "type": {
+                            "builtin_type": "DATE_TIME",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "user_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User id that last updated this record",
+                          "name": "user_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "updated_by_user_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User id that last updated this record",
+                          "name": "updated_by_user_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "updated_by_user_name",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User name that last updated this record",
+                          "name": "updated_by_user_name",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "created",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "created",
+                          "type": {
+                            "builtin_type": "DATE_TIME",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "user_name",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "User name that last updated this record",
+                          "name": "user_name",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Unique ID for this entity",
+                          "name": "id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.abstract_entity"
+                  },
+                  {
+                    "value": {
+                      "metadata": [
+                        {
+                          "value": {
+                            "elements": [
+                              {
+                                "value": {
+                                  "string_value": "AwsEvent",
+                                  "type": "STRING"
+                                },
+                                "key": "value"
+                              }
+                            ]
+                          },
+                          "key": "DiscriminatedBy"
+                        }
+                      ],
+                      "documentation": "",
+                      "name": "com.vmware.model.aws_event",
+                      "enumerations": [],
+                      "constants": [
+                        {
+                          "value": {
+                            "documentation": "Identifier denoting this structure, when it is used in polymorphic context. \nThis value should be assigned to the field which is used to discriminate the actual type used in the polymorphic context.\n",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "AwsEvent",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "_TYPE_IDENTIFIER"
+                        }
+                      ],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "instance_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            },
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "true",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "Discriminator"
+                            }
+                          ],
+                          "documentation": "AWS instance id of the host.",
+                          "name": "instance_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "start_time",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The date & time when the AWS event for the host is scheduled. format: date-time",
+                          "name": "start_time",
+                          "type": {
+                            "builtin_type": "DATE_TIME",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "type",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Type of the scheduled event (retirement, reboot, ...)",
+                          "name": "type",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "account_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Customer account id the instance belongs to.",
+                          "name": "account_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "description",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Description of the AWS scheduled event.",
+                          "name": "description",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.aws_event"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "",
+                      "name": "com.vmware.model.error_response",
+                      "enumerations": [],
+                      "constants": [],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "status",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "HTTP status code",
+                          "name": "status",
+                          "type": {
+                            "builtin_type": "LONG",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "path",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Originating request URI",
+                          "name": "path",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "retryable",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "If true, client should retry operation",
+                          "name": "retryable",
+                          "type": {
+                            "builtin_type": "BOOLEAN",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "error_code",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "unique error code",
+                          "name": "error_code",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "error_messages",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "localized error messages",
+                          "name": "error_messages",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "LIST",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.error_response"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "Detailed service errors associated with a task.",
+                      "name": "com.vmware.model.service_error",
+                      "enumerations": [],
+                      "constants": [],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "original_service",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The original service name of the error.",
+                          "name": "original_service",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "params",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The parameters of the service error.",
+                          "name": "params",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "category": "GENERIC",
+                                "generic_instantiation": {
+                                  "generic_type": "LIST",
+                                  "element_type": {
+                                    "builtin_type": "STRING",
+                                    "category": "BUILTIN"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "default_message",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Error message in English.",
+                          "name": "default_message",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "original_service_error_code",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The original error code of the service.",
+                          "name": "original_service_error_code",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "error_code",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Localizable error code.",
+                          "name": "error_code",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "localized_message",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The localized message.",
+                          "name": "localized_message",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.service_error"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "",
+                      "name": "com.vmware.model.edrs_cluster_info",
+                      "enumerations": [],
+                      "constants": [
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "skyscraper.autoscaler.elastic.drs.failed.hosts",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_KEY_FAILED_HOSTS"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "skyscraper.autoscaler.elastic.drs.min.hosts",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_KEY_MIN_HOSTS"
+                        },
+                        {
+                          "value": {
+                            "documentation": "",
+                            "type": {
+                              "builtin_type": "STRING",
+                              "category": "BUILTIN"
+                            },
+                            "value": {
+                              "primitive_value": {
+                                "string_value": "skyscraper.autoscaler.elastic.drs.max.hosts",
+                                "type": "STRING"
+                              },
+                              "category": "PRIMITIVE"
+                            }
+                          },
+                          "key": "STATUS_KEY_MAX_HOSTS"
+                        }
+                      ],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "status_key",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "Possible values are: \n   -  STATUS_KEY_MIN_HOSTS\n,   -  STATUS_KEY_MAX_HOSTS\n,   -  STATUS_KEY_FAILED_HOSTS\n,  Key identifying the status type",
+                          "name": "status_key",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "cluster_id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The cluster identifier",
+                          "name": "cluster_id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "status_message",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The status description",
+                          "name": "status_message",
+                          "type": {
+                            "category": "GENERIC",
+                            "generic_instantiation": {
+                              "generic_type": "OPTIONAL",
+                              "element_type": {
+                                "builtin_type": "STRING",
+                                "category": "BUILTIN"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "edrs_policy",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "",
+                          "name": "edrs_policy",
+                          "type": {
+                            "user_defined_type": {
+                              "resource_type": "com.vmware.vapi.structure",
+                              "resource_id": "com.vmware.model.edrs_policy"
+                            },
+                            "category": "USER_DEFINED"
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.edrs_cluster_info"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "documentation": "A task progress can be (but does NOT have to be) divided to more meaningful progress phases.",
+                      "name": "com.vmware.model.task_progress_phase",
+                      "enumerations": [],
+                      "constants": [],
+                      "type": "STRUCTURE",
+                      "fields": [
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "id",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The identifier of the task progress phase",
+                          "name": "id",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "name",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The display name of the task progress phase",
+                          "name": "name",
+                          "type": {
+                            "builtin_type": "STRING",
+                            "category": "BUILTIN"
+                          }
+                        },
+                        {
+                          "metadata": [
+                            {
+                              "value": {
+                                "elements": [
+                                  {
+                                    "value": {
+                                      "string_value": "progress_percent",
+                                      "type": "STRING"
+                                    },
+                                    "key": "value"
+                                  }
+                                ]
+                              },
+                              "key": "SerializationName"
+                            }
+                          ],
+                          "documentation": "The percentage of the phase that has completed format: int32",
+                          "name": "progress_percent",
+                          "type": {
+                            "builtin_type": "LONG",
+                            "category": "BUILTIN"
+                          }
+                        }
+                      ]
+                    },
+                    "key": "com.vmware.model.task_progress_phase"
+                  }
+                ],
+                "enumerations": [],
+                "services": []
+              },
+              "key": "com.vmware.model"
+            },
+            {
+              "value": {
+                "metadata": [],
+                "documentation": "",
+                "name": "com.vmware.api.orgs.sddcs.clusters",
+                "structures": [],
+                "enumerations": [],
+                "services": [
+                  {
+                    "value": {
+                      "metadata": [],
+                      "operations": [
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.Task",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.task"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "POST",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/clusters/{cluster}/edrs-policy",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Change the current EDRS policy on a cluster.",
+                            "name": "post",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "cluster",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "cluster identifier (required)",
+                                "name": "cluster",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "true",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "RequestBody"
+                                  }
+                                ],
+                                "documentation": "EDRS policy (required)",
+                                "name": "edrs_policy",
+                                "type": {
+                                  "user_defined_type": {
+                                    "resource_type": "com.vmware.vapi.structure",
+                                    "resource_id": "com.vmware.model.edrs_policy"
+                                  },
+                                  "category": "USER_DEFINED"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "post"
+                        },
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.EdrsPolicy",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.edrs_policy"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "GET",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/clusters/{cluster}/edrs-policy",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Get the current EDRS policy on a cluster.",
+                            "name": "get",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "cluster",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "cluster identifier (required)",
+                                "name": "cluster",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "get"
+                        }
+                      ],
+                      "documentation": "",
+                      "name": "com.vmware.api.orgs.sddcs.clusters.edrs_policy",
+                      "structures": [],
+                      "enumerations": [],
+                      "constants": []
+                    },
+                    "key": "com.vmware.api.orgs.sddcs.clusters.edrs_policy"
+                  }
+                ]
+              },
+              "key": "com.vmware.api.orgs.sddcs.clusters"
+            },
+            {
+              "value": {
+                "metadata": [],
+                "documentation": "",
+                "name": "com.vmware.api.orgs.sddcs",
+                "structures": [],
+                "enumerations": [],
+                "services": [
+                  {
+                    "value": {
+                      "metadata": [],
+                      "operations": [
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "",
+                              "type": {
+                                "category": "GENERIC",
+                                "generic_instantiation": {
+                                  "generic_type": "LIST",
+                                  "element_type": {
+                                    "user_defined_type": {
+                                      "resource_type": "com.vmware.vapi.structure",
+                                      "resource_id": "com.vmware.model.edrs_cluster_info"
+                                    },
+                                    "category": "USER_DEFINED"
+                                  }
+                                }
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "GET",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/edrs-policy",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Get the EDRS policy on every cluster in an SDDC.",
+                            "name": "get",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "get"
+                        }
+                      ],
+                      "documentation": "",
+                      "name": "com.vmware.api.orgs.sddcs.edrs_policy",
+                      "structures": [],
+                      "enumerations": [],
+                      "constants": []
+                    },
+                    "key": "com.vmware.api.orgs.sddcs.edrs_policy"
+                  },
+                  {
+                    "value": {
+                      "metadata": [],
+                      "operations": [
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.Task",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.task"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "POST",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/scale-sddc-size",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Scale SDDC Size.",
+                            "name": "post",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "post"
+                        }
+                      ],
+                      "documentation": "",
+                      "name": "com.vmware.api.orgs.sddcs.scale_sddc_size",
+                      "structures": [],
+                      "enumerations": [],
+                      "constants": []
+                    },
+                    "key": "com.vmware.api.orgs.sddcs.scale_sddc_size"
+                  }
+                ]
+              },
+              "key": "com.vmware.api.orgs.sddcs"
+            },
+            {
+              "value": {
+                "metadata": [
+                  {
+                    "value": {
+                      "elements": [
+                        {
+                          "value": {
+                            "string_value": "true",
+                            "type": "STRING"
+                          },
+                          "key": "autoGenerated"
+                        },
+                        {
+                          "value": {
+                            "string_value": "com.vmware.api",
+                            "type": "STRING"
+                          },
+                          "key": "value"
+                        }
+                      ]
+                    },
+                    "key": "Component"
+                  }
+                ],
+                "documentation": "",
+                "name": "com.vmware.api",
+                "structures": [],
+                "enumerations": [],
+                "services": [
+                  {
+                    "value": {
+                      "metadata": [],
+                      "operations": [
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.Task",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.task"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "POST",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/xlb/stop",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Stop cross-cluster load balancer initiated xvMotion operations on the sddc.",
+                            "name": "stop",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "stop"
+                        },
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.Task",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.task"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "GET",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/tasks/{task}",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Retrieve details of an autoscaler task.",
+                            "name": "get",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "task",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "task identifier (required)",
+                                "name": "task",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              },
+                              {
+                                "documentation": "Cannot find the task with given identifier",
+                                "structure_id": "com.vmware.vapi.std.errors.not_found"
+                              }
+                            ]
+                          },
+                          "key": "get"
+                        },
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.Task",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.task"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "POST",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/xlb/run",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Execute cross-cluster load balancing operations on the sddc.",
+                            "name": "run",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "run"
+                        },
+                        {
+                          "value": {
+                            "output": {
+                              "metadata": [],
+                              "documentation": "com.vmware.model.Task",
+                              "type": {
+                                "user_defined_type": {
+                                  "resource_type": "com.vmware.vapi.structure",
+                                  "resource_id": "com.vmware.model.task"
+                                },
+                                "category": "USER_DEFINED"
+                              }
+                            },
+                            "metadata": [
+                              {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "value": {
+                                        "string_value": "POST",
+                                        "type": "STRING"
+                                      },
+                                      "key": "method"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "/vmc/autoscaler/api/orgs/{org}/sddcs/{sddc}/xlb/analysis",
+                                        "type": "STRING"
+                                      },
+                                      "key": "value"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "contentType"
+                                    },
+                                    {
+                                      "value": {
+                                        "string_value": "application/json",
+                                        "type": "STRING"
+                                      },
+                                      "key": "accept"
+                                    }
+                                  ]
+                                },
+                                "key": "RequestMapping"
+                              }
+                            ],
+                            "documentation": "Get cross-cluster load-balancer recommendations for the sddc.",
+                            "name": "analysis",
+                            "params": [
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "org",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "org identifier (required)",
+                                "name": "org",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "sddc",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "PathVariable"
+                                  }
+                                ],
+                                "documentation": "Sddc identifier (required)",
+                                "name": "sddc",
+                                "type": {
+                                  "builtin_type": "STRING",
+                                  "category": "BUILTIN"
+                                }
+                              },
+                              {
+                                "metadata": [
+                                  {
+                                    "value": {
+                                      "elements": [
+                                        {
+                                          "value": {
+                                            "string_value": "true",
+                                            "type": "STRING"
+                                          },
+                                          "key": "value"
+                                        }
+                                      ]
+                                    },
+                                    "key": "RequestBody"
+                                  }
+                                ],
+                                "documentation": "List of input cluster uuids. The minimum number of input clusters for cross-cluster load balancer is 2. The maximum number of input clusters for cross-cluster load balancer is 4. Example - `[\\\"e823eb1c-d79d-4763-ad6b-b447c14b6cd2\\\", \\\"71066e28-3a15-4670-8555-72068c9d5320\\\"]` (required)",
+                                "name": "clusters",
+                                "type": {
+                                  "category": "GENERIC",
+                                  "generic_instantiation": {
+                                    "generic_type": "LIST",
+                                    "element_type": {
+                                      "builtin_type": "STRING",
+                                      "category": "BUILTIN"
+                                    }
+                                  }
+                                }
+                              }
+                            ],
+                            "errors": [
+                              {
+                                "documentation": "Unauthorized",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthenticated"
+                              },
+                              {
+                                "documentation": "Invalid action or bad argument",
+                                "structure_id": "com.vmware.vapi.std.errors.invalid_request"
+                              },
+                              {
+                                "documentation": "Forbidden",
+                                "structure_id": "com.vmware.vapi.std.errors.unauthorized"
+                              }
+                            ]
+                          },
+                          "key": "analysis"
+                        }
+                      ],
+                      "documentation": "",
+                      "name": "com.vmware.api.autoscaler",
+                      "structures": [],
+                      "enumerations": [],
+                      "constants": []
+                    },
+                    "key": "com.vmware.api.autoscaler"
+                  }
+                ]
+              },
+              "key": "com.vmware.api"
+            }
+          ]
+        },
+        "privilege": { "packages": [] },
+        "authentication": { "packages": [] }
+      },
+      "key": "com.vmware.api"
+    }
+  ],
+  "version": "1.0"
+}

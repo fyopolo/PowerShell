@@ -1,0 +1,49 @@
+"id";"displayName";"description";"scriptContent"
+"c11e14a2-f4b8-4b70-8c62-572d02153228";"OneDriveMaps_Sylvia";"";"?Function Get-NextAvailableDriveLetter(){
+
+    $Taken = Get-WmiObject Win32_LogicalDisk | Select -expand DeviceID
+    $Letter = 70..90 | ForEach-Object{ [char]$_ + "":"" }
+    (Compare-Object -ReferenceObject $Taken -DifferenceObject $Letter)[1].InputObject
+    Return
+
+}
+
+Function Add-RegKey (){
+
+    $Label = Split-Path -Path $UNCPath -Leaf
+    $MountPoint = Get-ChildItem HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2 | Where-Object {$_.Name -like ""*$Label*""}
+
+    Push-Location
+    Set-Location HKCU:
+    New-ItemProperty -Path $($MountPoint.Name) -Name ""_LabelFromReg"" -Value $Label -PropertyType String -Force | Out-Null
+    Pop-Location
+
+}
+
+$RegODConnections = [Microsoft.Win32.RegistryKey]::OpenBaseKey(""CurrentUser"",""default"")
+$SPConnections = $RegODConnections.OpenSubKey(""SOFTWARE\Microsoft\OneDrive\Accounts\Business1\Tenants\Alera Group"").GetValueNames()
+$Maps = Get-PSDrive -PSProvider FileSystem
+
+foreach ($Connection in $SPConnections){
+
+    $UNCPath = ""\\$env:COMPUTERNAME\"" + ($Connection).Replace("":"",""$"")
+    $Label = Split-Path -Path $UNCPath -Leaf
+
+   IF (-NOT($UNCPath -in $(Get-PSDrive -PSProvider FileSystem).DisplayRoot)){
+
+        Write-Host ""Creating Map drive and setting Label: $UNCPath"" -ForegroundColor Cyan
+        net use $(Get-NextAvailableDriveLetter) $UNCPath | Out-Null
+        Sleep -Milliseconds 300 # This is used because while testing Registry for Mount Point wasn't ready, therefore next command (Add-RegKey function) will fail.
+        Add-RegKey
+
+    } ELSE { Write-Warning ""Mapdrive already found: $UNCPath"" }
+}"
+"f3ed1643-4450-47d1-afd0-d8b5d9f71d98";"OneDrive_SlientLogin";"";"?$HKLMregistryPath = 'HKLM:\SOFTWARE\Policies\Microsoft\OneDrive'##Path to HKLM keys
+$DiskSizeregistryPath = 'HKLM:\SOFTWARE\Policies\Microsoft\OneDrive\DiskSpaceCheckThresholdMB'##Path to max disk size key
+$TenantGUID = '5b808100-5f89-4e87-b816-634cd9906236'
+
+if(!(Test-Path $HKLMregistryPath)){New-Item -Path $HKLMregistryPath -Force}
+if(!(Test-Path $DiskSizeregistryPath)){New-Item -Path $DiskSizeregistryPath -Force}
+
+New-ItemProperty -Path $HKLMregistryPath -Name 'SilentAccountConfig' -Value '1' -PropertyType DWORD -Force | Out-Null ##Enable silent account configuration
+New-ItemProperty -Path $DiskSizeregistryPath -Name $TenantGUID -Value '102400' -PropertyType DWORD -Force | Out-Null ##Set max OneDrive threshold before prompting"

@@ -1,0 +1,1 @@
+﻿Get-AppxPackage | where {$_.Name -notlike "*Microsoft.Net*"} | Remove-AppxPackage

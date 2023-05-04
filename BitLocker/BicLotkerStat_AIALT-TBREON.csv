@@ -1,0 +1,2 @@
+"ComputerName","TPMPresent","Volume","VolumeType","VolCapacity(GB)","ProtectionStatus","VolumeStatus","KeyProtectorType","BitLockerKeyID","RecoveryKey"
+"AIALT-TBREON","True","C:","OperatingSystem","455","Off","Not Encrypted","RecoveryPassword","Not Present","Not Present"

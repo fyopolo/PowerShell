@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>VMware.DeployAutomation</id>
+    <version>7.0.0.15902843</version>
+    <authors>"VMware"</authors>
+    <owners>VMware, Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This Windows PowerShell module contains PowerCLI Auto Deploy cmdlets.</description>
+    <releaseNotes />
+    <copyright>Copyright (c) VMware, Inc. All rights reserved.</copyright>
+    <tags>PSModule PSIncludes_Cmdlet PSCmdlet_Add-DeployRule PSCmdlet_Add-ProxyServer PSCmdlet_Add-ScriptBundle PSCmdlet_Copy-DeployRule PSCmdlet_Export-AutoDeployState PSCmdlet_Get-DeployOption PSCmdlet_Get-DeployRule PSCmdlet_Get-DeployRuleSet PSCmdlet_Get-ProxyServer PSCmdlet_Get-ScriptBundle PSCmdlet_Get-VMHostAttributes PSCmdlet_Get-VMHostImageProfile PSCmdlet_Get-VMHostMatchingRules PSCmdlet_Import-AutoDeployState PSCmdlet_New-DeployRule PSCmdlet_Remove-DeployRule PSCmdlet_Remove-ProxyServer PSCmdlet_Remove-ScriptBundle PSCmdlet_Repair-DeployImageCache PSCmdlet_Repair-DeployRuleSetCompliance PSCmdlet_Set-DeployOption PSCmdlet_Set-DeployRule PSCmdlet_Set-DeployRuleSet PSCmdlet_Set-ESXImageProfileAssociation PSCmdlet_Set-ScriptBundleAssociation PSCmdlet_Switch-ActiveDeployRuleSet PSCmdlet_Test-DeployRuleSetCompliance PSCommand_Add-DeployRule PSCommand_Add-ProxyServer PSCommand_Add-ScriptBundle PSCommand_Copy-DeployRule PSCommand_Export-AutoDeployState PSCommand_Get-DeployOption PSCommand_Get-DeployRule PSCommand_Get-DeployRuleSet PSCommand_Get-ProxyServer PSCommand_Get-ScriptBundle PSCommand_Get-VMHostAttributes PSCommand_Get-VMHostImageProfile PSCommand_Get-VMHostMatchingRules PSCommand_Import-AutoDeployState PSCommand_New-DeployRule PSCommand_Remove-DeployRule PSCommand_Remove-ProxyServer PSCommand_Remove-ScriptBundle PSCommand_Repair-DeployImageCache PSCommand_Repair-DeployRuleSetCompliance PSCommand_Set-DeployOption PSCommand_Set-DeployRule PSCommand_Set-DeployRuleSet PSCommand_Set-ESXImageProfileAssociation PSCommand_Set-ScriptBundleAssociation PSCommand_Switch-ActiveDeployRuleSet PSCommand_Test-DeployRuleSetCompliance PSCommand_Apply-ESXImageProfile PSCommand_Get-DeployCommand</tags>
+    <dependencies>
+      <dependency id="VMware.ImageBuilder" version="7.0.0.15902843" />
+    </dependencies>
+  </metadata>
+</package>

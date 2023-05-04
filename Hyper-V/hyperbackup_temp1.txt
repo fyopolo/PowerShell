@@ -1,0 +1,88 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20221013010007
+Username: ORIONRISK\Alera
+RunAs User: ORIONRISK\Alera
+Machine: ORION-HOST03 (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe C:\Scripts\HyperVBackup.ps1
+Process ID: 2200
+PSVersion: 5.1.14393.4583
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.4583
+BuildVersion: 10.0.14393.4583
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is c:\scripts\hyperbackup_temp1.txt
+Dedupe
+
+Success Restart Needed Exit Code      Feature Result
+------- -------------- ---------      --------------
+True    No             NoChangeNeeded {}
+
+Capacity                 : 8001560768512
+ChunkRedundancyThreshold : 100
+DataAccessEnabled        : True
+Enabled                  : True
+ExcludeFileType          :
+ExcludeFileTypeDefault   : {bin, vsv, slp, xml...}
+ExcludeFolder            :
+FreeSpace                : 3628907388928
+InputOutputScale         : 0
+MinimumFileAgeDays       : 0
+MinimumFileSize          : 32768
+NoCompress               : False
+NoCompressionFileType    : {asf, mov, wma, wmv...}
+OptimizeInUseFiles       : True
+OptimizePartialFiles     : False
+SavedSpace               : 8337359151860
+SavingsRate              : 65
+UnoptimizedSize          : 12710012531444
+UsageType                : Backup
+UsedSpace                : 4372653379584
+Verify                   : False
+Volume                   : R:
+VolumeId                 : \\?\Volume{6d50ebe4-857d-4ebe-af27-c1ab7b325277}\
+PSComputerName           :
+ObjectId                 : \\?\Volume{6d50ebe4-857d-4ebe-af27-c1ab7b325277}\
+
+BitLocker
+
+PSPath            : Microsoft.PowerShell.Core\FileSystem::R:\RollBack\2022-10-13
+PSParentPath      : Microsoft.PowerShell.Core\FileSystem::R:\RollBack
+PSChildName       : 2022-10-13
+PSDrive           : R
+PSProvider        : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer     : True
+Name              : 2022-10-13
+FullName          : R:\RollBack\2022-10-13
+Parent            : RollBack
+Exists            : True
+Root              : R:\
+Extension         :
+CreationTime      : 10/13/2022 1:00:22 AM
+CreationTimeUtc   : 10/13/2022 8:00:22 AM
+LastAccessTime    : 10/13/2022 1:00:22 AM
+LastAccessTimeUtc : 10/13/2022 8:00:22 AM
+LastWriteTime     : 10/13/2022 1:00:22 AM
+LastWriteTimeUtc  : 10/13/2022 8:00:22 AM
+Attributes        : Directory
+Mode              : d-----
+BaseName          : 2022-10-13
+Target            : {}
+LinkType          :
+
+Size VMs
+Leaving SizeVMs
+Exporter
+Leaving Exporter
+Cleanup
+Exporter
+PS>TerminatingError(Export-VM): "Cannot validate argument on parameter 'Name'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Leaving Exporter
+**********************
+Windows PowerShell transcript end
+End time: 20221013060326
+**********************

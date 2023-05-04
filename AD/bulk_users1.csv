@@ -1,0 +1,4 @@
+SamAccountName,FirstName,MiddleInitial,LastName,DisplayName,UserName,email,StreetAddress,City,ZipCode,State,Country,Department,Password,OfficePhone,Mobile,JobTitle,Company,OU
+jlynch,Joshua,L,Lynch,Joshua Lynch,JLynch,JLynch@activedirectorypro.com,2749 Liberty Street,Dallas,75202,TX,United States,Marketing,Roadfox2209,214-800-4820,,Marking Specialist,AD Pro,"OU=TestOU,OU=Users,OU=HQ,DC=hq,DC=eiweb,DC=local"
+ssmith,Sam,A,smith,Sam Smith,ssmith,ssmith@activedirectorypro.com,2749 Liberty Street,Dallas,75202,TX,United States,Marketing,Roadfox2208,214-800-4820,,Marking Specialist,AD Pro,"OU=TestOU,OU=Users,OU=HQ,DC=hq,DC=eiweb,DC=local"
+bacosta,Bárbara,Y,Acosta,Bárbara Acosta,bacosta,bacosta@eiweb.com.ar,"Calle 519, 8540",La Plata,1903,Buenos Aires,Argentina,Test Department,Roadfox2208,+5411 999-8888,+54911 5658-0396,Marking Specialist,Electricidad Industrial S.R.L.,"OU=TestOU,OU=Users,OU=HQ,DC=hq,DC=eiweb,DC=local"

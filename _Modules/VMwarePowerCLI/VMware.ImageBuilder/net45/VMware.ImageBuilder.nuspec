@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>VMware.ImageBuilder</id>
+    <version>7.0.0.15902843</version>
+    <authors>"VMware"</authors>
+    <owners>VMware, Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This Windows PowerShell module contains PowerCLI ImageBuilder cmdlets.</description>
+    <releaseNotes />
+    <copyright>Copyright (c) VMware, Inc. All rights reserved.</copyright>
+    <tags>PSModule PSIncludes_Cmdlet PSCmdlet_Add-EsxSoftwareDepot PSCmdlet_Add-EsxSoftwarePackage PSCmdlet_Compare-EsxImageProfile PSCmdlet_Export-EsxImageProfile PSCmdlet_Get-EsxImageProfile PSCmdlet_Get-EsxSoftwareDepot PSCmdlet_Get-EsxSoftwarePackage PSCmdlet_New-EsxImageProfile PSCmdlet_Remove-EsxImageProfile PSCmdlet_Remove-EsxSoftwareDepot PSCmdlet_Remove-EsxSoftwarePackage PSCmdlet_Set-EsxImageProfile PSCommand_Add-EsxSoftwareDepot PSCommand_Add-EsxSoftwarePackage PSCommand_Compare-EsxImageProfile PSCommand_Export-EsxImageProfile PSCommand_Get-EsxImageProfile PSCommand_Get-EsxSoftwareDepot PSCommand_Get-EsxSoftwarePackage PSCommand_New-EsxImageProfile PSCommand_Remove-EsxImageProfile PSCommand_Remove-EsxSoftwareDepot PSCommand_Remove-EsxSoftwarePackage PSCommand_Set-EsxImageProfile</tags>
+    <dependencies>
+      <dependency id="VMware.VimAutomation.Core" version="10.1.0.8185746" />
+    </dependencies>
+  </metadata>
+</package>

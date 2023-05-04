@@ -1,0 +1,3 @@
+"ComputerName","TPMPresent","Volume","VolumeType","VolCapacity(GB)","ProtectionStatus","VolumeStatus","KeyProtectorType","BitLockerKeyID","RecoveryKey"
+"FER-LENOVO-Y720","True","C:","OperatingSystem","200","Off","Not Encrypted","RecoveryPassword","Not Present","Not Present"
+"FER-LENOVO-Y720","True","D:","Data","266","Off","Not Encrypted","RecoveryPassword","Not Present","Not Present"
